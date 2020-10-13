@@ -91,7 +91,7 @@ $I->seeDocumentInElasticsearch('testIndex', 111);
 ```
 
  * `param string` $index
- * `param string|id` $id
+ * `param string|int` $id
 
 #### dontSeeDocumentInElasticsearch
 Effect is opposite to ->seeDocumentInElasticsearch
@@ -101,7 +101,7 @@ $I->dontSeeDocumentInElasticsearch('testIndex', 222);
 ```
 
  * `param string` $index
- * `param string|id` $id
+ * `param string|int` $id
 
 #### grabDocumentFromElasticsearch
 Returns response of get document [function](https://github.com/elastic/elasticsearch-php#get-a-document)
@@ -128,7 +128,7 @@ Array
 ```
 
  * `param string` $index
- * `param string|id` $id
+ * `param string|int` $id
 
  * `return array` $response
 
@@ -142,7 +142,7 @@ $I->haveInElasticsearch('testIndex', 222, $item);
 ```
 
  * `param string` $index
- * `param string|id` $id
+ * `param string|int` $id
  * `param array` $body
 
  * `return array` $response
